@@ -12,6 +12,11 @@
     />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
     <link rel="icon" type="image/png" href="assets/logo/Logo-Preta.png">
 
     <link rel="stylesheet " href="css/homePage.css ">
@@ -25,17 +30,23 @@
         Kota
     </div>
     <div class="homePage">
-        <div class="menu">
-            <a id="button" href="#">Dolar</a>
-            <a id="button" href="#">Euro</a>
-            <a id="button" href="#">BitCoin</a>
-        </div>
-        <div class="contValor">
+
+        <div class="contValor" data-flickity>
             <div class="cotas" id="cotas">
                 <h2>Preço do dolar</h2>
                 <h1 class="dolar"></h1>
             </div>
+            <div class="cotas" id="cotas">
+                <h2>Preço do Euro</h2>
+                <h1 class="euro"></h1>
+            </div>
+            <div class="cotas" id="cotas">
+                <h2>Preço do BitCoin</h2>
+                <h1 class="bitcoin"></h1>
+            </div>
+
         </div>
+
 
     </div>
 
@@ -44,6 +55,7 @@
 
 
     <script src=" script.js "></script>
+
 </body>
 
 </html>

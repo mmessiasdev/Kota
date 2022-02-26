@@ -30,7 +30,7 @@ body {
     position: relative;
     overflow-y: hidden;
     background-image: linear-gradient(40deg, rgb(190, 233, 232), rgb(255, 255, 255));
-    height: max-content;
+    height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -38,7 +38,7 @@ body {
 }
 
 .homePage .menu {
-    height: 10vh;
+    height: 80px;
     width: 100%;
     /* border: 1px solid #d0ff00; */
 }
@@ -47,17 +47,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.homePage .cotas {
-    width: 400px;
-    border-radius: 15px;
-    background-color: #d7d9da;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* border: 1px solid #d0ff00; */
 }
 
 .cotas h1 {
@@ -91,9 +80,13 @@ body {
 
 .contValor {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 100vw;
-    margin-top: 40px;
+}
+
+.cotas.is-selected {
+    transition: background-color 1.5s;
+    background-color: #dfdfdf;
 }
 
 .header {
@@ -107,4 +100,22 @@ body {
     overflow-x: hidden;
     height: 50px;
     background-color: #f5fdff;
+}
+
+.flickity-button {
+    background: transparent;
+}
+
+.cotas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 200px;
+    /* full width */
+    /* height of carousel */
+}
+
+.flickity-viewport {
+    height: auto;
 }
