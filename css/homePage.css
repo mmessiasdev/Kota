@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #1f1d1d;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.homePage {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    position: relative;
+    overflow-y: hidden;
+    background-image: linear-gradient(40deg, rgb(190, 233, 232), rgb(255, 255, 255));
+    height: max-content;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.homePage .menu {
+    height: 10vh;
+    width: 100%;
+    /* border: 1px solid #d0ff00; */
+}
+
+.menu a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homePage .cotas {
+    width: 400px;
+    border-radius: 15px;
+    background-color: #d7d9da;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid #d0ff00; */
+}
+
+.cotas h1 {
+    font-size: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    color: rgb(48, 48, 48);
+}
+
+.cotas h2 {
+    font-size: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    color: rgb(48, 48, 48);
+}
+
+.homePage .menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+}
+
+.homePage .menu a {
+    text-decoration: none;
+}
+
+.contValor {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 40px;
+}
+
+.header {
+    font-weight: 700;
+    font-size: 25px;
+    display: flex;
+    padding-left: 20px;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    overflow-x: hidden;
+    height: 50px;
+    background-color: #f5fdff;
+}
